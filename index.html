@@ -11,105 +11,100 @@
 </head>
 
 <body>
-    <header>
-  <h1>My Portfolio</h1>
+  <header>
+    <h1>My Portfolio</h1>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-<main>
+    <nav>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme-toggle" type="button" aria-pressed="false">
+      Dark Mode
+    </button>
+  </header>
+  <main>
 
-  <section id="about">
-    <h2>About Me</h2>
+    <section id="about">
+      <h2>About Me</h2>
 
-    <p class="tagline">Aspiring computer scientist and web developer.</p>
+      <p class="tagline">Aspiring computer scientist and web developer.</p>
 
-    <p>
+      <p>
 
-    I am a motivated Computer Science student at King Fahd University of
-    Petroleum and Minerals (KFUPM) with strong foundations in object-oriented
-    programming (OOP), data structures and algorithms, database systems, and
-    web development. I enjoy creating useful digital experiences and
-    continuously developing my technical and problem-solving skills. I am
-    currently expanding my knowledge of HTML, CSS, JavaScript, and software
-    engineering through academic and personal projects.
-    </p>
-  </section>
-
-
-  <section id="projects">
-  <h2>My Projects</h2>
-
-  <div class="projects-container">
-
-    <article class="project-card">
-      <img src="assets/images/parking-project.png"
-     alt="KFUPM Parking Reservation System prototype">
-      <h3>Project 1 — KFUPM Parking Reservation System</h3>
-      <p>Designed a KFUPM parking reservation system prototype that helps users
-    view parking availability and reserve parking spaces efficiently.</p>
-    </article>
-
-    <article class="project-card">
-      <img src="assets/images/file-system-project.png"
-    alt="Code from the In-Memory File System Simulator">
-      <h3>Project 2 — In-Memory File System Simulator</h3>
-      <p>Developed an in-memory file system simulator using OOP, applying data structures and algorithms using HashMaps, trees, DFS, and KMP to support efficient file operations.</p>
-    </article>
-
-  </div>
-</section>
-<section id="contact">
-  <h2>Contact Me</h2>
-
-  <p>If you'd like to get in touch, send me a message below.</p>
-
-  <form id="contact-form">
-
-    <div class="form-group">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-        required>
-    </div>
-
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-        required>
-    </div>
-
-    <div class="form-group">
-      <label for="message">Message:</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="5"
-        placeholder="Write your message"
-        required></textarea>
-    </div>
-
-    <button type="submit">Send Message</button>
-
-  </form>
-</section>
+        I am a motivated Computer Science student at King Fahd University of
+        Petroleum and Minerals (KFUPM) with strong foundations in object-oriented
+        programming (OOP), data structures and algorithms, database systems, and
+        web development. I enjoy creating useful digital experiences and
+        continuously developing my technical and problem-solving skills. I am
+        currently expanding my knowledge of HTML, CSS, JavaScript, and software
+        engineering through academic and personal projects.
+      </p>
+    </section>
 
 
-</main>
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project-search">
+        <label for="project-search">Search Projects:</label>
+        <input type="text" id="project-search" placeholder="Search by project name...">
+      </div>
 
-<footer>
-  <p>&copy; 2026 My Portfolio. All rights reserved.</p>
-</footer>
+      <p id="no-projects-message" hidden>
+        No projects found. Try another keyword.
+      </p>
+
+      <div class="projects-container">
+
+        <article class="project-card">
+          <img src="assets/images/parking-project.png" alt="KFUPM Parking Reservation System prototype">
+          <h3>Project 1 — KFUPM Parking Reservation System</h3>
+          <p>Designed a KFUPM parking reservation system prototype that helps users
+            view parking availability and reserve parking spaces efficiently.</p>
+        </article>
+
+        <article class="project-card">
+          <img src="assets/images/file-system-project.png" alt="Code from the In-Memory File System Simulator">
+          <h3>Project 2 — In-Memory File System Simulator</h3>
+          <p>Developed an in-memory file system simulator using OOP, applying data structures and algorithms using
+            HashMaps, trees, DFS, and KMP to support efficient file operations.</p>
+        </article>
+
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <p>If you'd like to get in touch, send me a message below.</p>
+
+      <form id="contact-form">
+
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p id="form-feedback" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+  </footer>
 
 
   <script src="js/script.js"></script>

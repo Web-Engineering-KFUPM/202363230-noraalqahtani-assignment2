@@ -1,43 +1,80 @@
-# Technical Documentation
+# Technical Documentation — Assignment 2
 
-## Project Overview
+## 1. Project Overview
 
-This project is a responsive personal portfolio website built using HTML, CSS, and JavaScript. It contains information about me, examples of my academic projects, and a contact form.
+This project is an updated version of my personal portfolio website from Assignment 1. It was developed using HTML, CSS, and JavaScript for SWE 363.
 
-## HTML Structure
+For Assignment 2, I added interactive features, including live project search, dark and light mode, and improved contact form validation and feedback.
 
-The website uses semantic HTML elements to keep the page organized. The main parts are:
+## 2. HTML Structure
 
-- A `header` containing the portfolio title and navigation
-- An About Me section with my introduction
-- A Projects section containing two project cards
-- A Contact section with Name, Email, and Message fields
-- A `footer` at the bottom of the page
+The website uses semantic HTML elements to organize the content.
 
-The Projects section currently includes my KFUPM Parking Reservation System and In-Memory File System Simulator.
+- `header` contains the portfolio title and navigation links.
+- `main` contains the main website content.
+- `section` separates the About Me, Projects, and Contact sections.
+- `article` is used for individual project cards.
+- `form` contains the contact fields.
+- `footer` contains the footer information.
 
-## CSS and Responsive Design
+I also added a project search input, a theme toggle button, and a feedback message below the contact form.
+
+## 3. CSS and Responsive Design
 
 The styling is stored in `css/styles.css`.
 
-I used Flexbox for the header and navigation and CSS Grid for the project cards. I also added spacing, colors, card styling, hover effects, and form styling.
+I used Flexbox for the header and navigation, and CSS Grid to organize the project cards.
 
-A media query is used for screens that are 768px wide or smaller. On smaller screens, the header changes to a vertical layout and the project cards change from two columns to one column. This helps the website work better on desktop, tablet, and mobile devices.
+A media query is used for screens that are 768px wide or smaller. On smaller screens, the layout adjusts by stacking the project cards vertically and changing the header arrangement.
 
-## JavaScript
+I also used hover effects and smooth transitions to improve the appearance of interactive elements.
+
+## 4. JavaScript Features
 
 The JavaScript code is stored in `js/script.js`.
 
-JavaScript is used for the contact form interaction. When the user submits the completed form, the default submission is prevented, a confirmation message is displayed using the user's name, and the form is cleared.
+### Live Project Search
 
-The contact form does not require a backend or database.
+The search feature uses the `input` event to detect when a user types in the search field.
 
-## Project Images
+JavaScript checks the project titles using `includes()` and displays only the matching project cards. If no projects match, a message appears.
 
-The project images are stored in `assets/images/`.
+### Dark and Light Mode
 
-I used images from my own academic work. The KFUPM Parking Reservation System uses an image of the final prototype, while the In-Memory File System Simulator uses a screenshot showing part of the project code.
+The theme toggle allows users to switch between light and dark mode.
 
-## Testing
+JavaScript adds or removes the `dark-mode` class from the page. The selected theme is saved using `localStorage` and restored when the page is opened again.
 
-I tested the website in the browser by checking the navigation links, contact form, required fields, hover effects, and JavaScript interaction. I also resized the browser window to check that the layout responds correctly on smaller screens.
+### Contact Form Validation
+
+The contact form collects the user's name, email, and message.
+
+JavaScript checks the input values and prevents the default form submission. When the information is valid, a success message appears below the form and the fields are cleared.
+
+Invalid or empty fields are also checked, with the browser's built-in validation helping display appropriate feedback.
+
+The form does not connect to a backend or send messages to a server.
+
+## 5. Project Images
+
+The project screenshots are stored in `assets/images/`.
+
+The portfolio includes images from two of my academic projects:
+
+- KFUPM Parking Reservation System
+- In-Memory File System Simulator
+
+## 6. Testing
+
+I tested the website by checking:
+
+- Navigation between the main sections
+- Live project search with matching and nonmatching keywords
+- Dark and light mode, including saved preferences after refreshing
+- Contact form validation and success feedback
+- Responsive layout at different browser widths
+- JavaScript errors using the browser Console
+
+## 7. File Organization
+
+The project separates HTML, CSS, JavaScript, images, and documentation into different files and folders. This makes the code easier to read, update, and maintain.
