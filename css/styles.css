@@ -229,7 +229,8 @@ body.dark-mode #no-projects-message {
 }
 
 
-/* Contact form feedback */
+/* Contact form feedback*/
+
 #form-feedback {
   margin-top: 1rem;
   padding: 0;
