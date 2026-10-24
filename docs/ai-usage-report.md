@@ -49,3 +49,30 @@ I reviewed the AI suggestions and made changes based on my portfolio's requireme
 One example was fixing the live project search so it responded while typing rather than only after pressing Enter. I also kept my original academic project content and screenshots instead of replacing them with generic examples.
 
 I used ChatGPT as a learning and development tool and tested the suggested changes to make sure they worked with my website.
+
+## 6. AI Usage Log
+
+The following table documents my use of ChatGPT while developing Assignment 2. The IDs refer to AI conversations or generated artifacts included in the evidence ZIP.
+
+| ID | Tool (model) | Date | Purpose | Files affected | What I changed and how I verified it |
+|---|---|---|---|---|---|
+| C01 | ChatGPT (GPT-6) | October 18, 2026 | Planning Assignment 2 and reusing my previous portfolio | Project folder | Copied Assignment 1 into a separate folder and checked that the original project remained unchanged. |
+| A01 | ChatGPT (GPT-6) | October 18, 2026 | Improving code formatting | `index.html`, `css/styles.css`, `js/script.js` | Applied consistent indentation using VS Code formatting and checked that the website still displayed correctly. |
+| A02 | ChatGPT (GPT-6) | October 18, 2026 | Adding live project search | `index.html`, `css/styles.css`, `js/script.js` | Added the search feature and corrected the event handling so the projects filtered immediately while typing. |
+| A03 | ChatGPT (GPT-6) | October 18, 2026 | Adding dark and light mode | `index.html`, `css/styles.css`, `js/script.js` | Added the theme toggle and `localStorage` to remember the selected theme after refreshing. |
+| A04 | ChatGPT (GPT-6) | October 18–19, 2026 | Improving contact form validation | `index.html`, `css/styles.css`, `js/script.js` | Replaced the popup alert with an inline feedback message and reviewed the form validation. |
+| A05 | ChatGPT (GPT-6) | October 19, 2026 | Updating project documentation | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Updated the documentation and added the project structure that was missing in Assignment 1. |
+| A06 | ChatGPT (GPT-6) | October 19, 2026 | Reviewing Assignment 2 files | `css/styles.css`, `docs/ai-usage-report.md` | Corrected the AI report filename and added improvements for dark-mode text readability. |
+| C02 | ChatGPT (GPT-6) | October 19, 2026 | GitHub repository setup and submission guidance | Git repository | Connected Assignment 2 to a new repository, committed the changes, and verified that the push succeeded. |
+
+## 7. AI Declaration
+
+I declare that this report and the attached evidence document all of my AI use in this assignment, with complete and unedited conversations, and that I understand and can explain all the code I submitted. I understand that undeclared AI use or a false declaration will be treated as plagiarism according to KFUPM regulations.
+
+**Student Name:** Nora Alqahtani
+
+**Student ID:** 202363230
+
+**Date:** [October 19, 2026]
+
+**Signature:** Nora Alqahtani
