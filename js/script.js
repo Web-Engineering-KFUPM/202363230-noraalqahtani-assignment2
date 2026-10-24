@@ -52,7 +52,6 @@ projectSearch.addEventListener("input", function () {
   noProjectsMessage.hidden = visibleProjects > 0;
 });
 
-
 // Dark and light mode
 const themeToggle = document.getElementById("theme-toggle");
 
