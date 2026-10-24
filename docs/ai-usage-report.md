@@ -63,7 +63,6 @@ The following table documents my use of ChatGPT while developing Assignment 2. T
 | A04 | ChatGPT (GPT-6) | October 18–19, 2026 | Improving contact form validation | `index.html`, `css/styles.css`, `js/script.js` | Replaced the popup alert with an inline feedback message and reviewed the form validation. |
 | A05 | ChatGPT (GPT-6) | October 19, 2026 | Updating project documentation | `README.md`, `docs/technical-documentation.md`, `docs/ai-usage-report.md` | Updated the documentation and added the project structure that was missing in Assignment 1. |
 | A06 | ChatGPT (GPT-6) | October 19, 2026 | Reviewing Assignment 2 files | `css/styles.css`, `docs/ai-usage-report.md` | Corrected the AI report filename and added improvements for dark-mode text readability. |
-| C02 | ChatGPT (GPT-6) | October 19, 2026 | GitHub repository setup and submission guidance | Git repository | Connected Assignment 2 to a new repository, committed the changes, and verified that the push succeeded. |
 
 ## 7. AI Declaration
 
