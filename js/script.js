@@ -1,4 +1,5 @@
 // Contact form validation and feedback
+
 const contactForm = document.getElementById("contact-form");
 const formFeedback = document.getElementById("form-feedback");
 
